@@ -1,0 +1,54 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "nigga",
+      "uniqueId": "f7c5f9d8-d932-441e-9a20-8e3d50f9bd5e"
+    },
+    "time": 1767036442414,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/OwZWGyMyCN"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "nigga",
+      "uniqueId": "f7c5f9d8-d932-441e-9a20-8e3d50f9bd5e"
+    },
+    "time": 1767016093447,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/jMGq1wq9Zi"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "nigga",
+      "uniqueId": "f7c5f9d8-d932-441e-9a20-8e3d50f9bd5e"
+    },
+    "time": 1767015384580,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/X2J24V0eUd"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "nigga",
+      "uniqueId": "f7c5f9d8-d932-441e-9a20-8e3d50f9bd5e"
+    },
+    "time": 1767015244736,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/aI2JTQkkk6"
+    }
+  }
+]

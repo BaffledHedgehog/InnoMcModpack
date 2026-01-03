@@ -1,0 +1,23 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "apotheosis:apoth_chronicle": {
+      "viewedEntries": [
+        "apotheosis:adventure/affix_loot/salvaging",
+        "apotheosis:adventure/affix_loot/rarities",
+        "apotheosis:adventure/affix_loot/augmenting",
+        "apotheosis:adventure/affix_loot/gem_dust",
+        "apotheosis:adventure/affix_loot/gem_cutting",
+        "apotheosis:adventure/affix_loot/gems",
+        "apotheosis:adventure/affix_loot/reforging",
+        "apotheosis:adventure/affix_loot/affixes",
+        "apotheosis:adventure/bosses/boss_dungeons",
+        "apotheosis:adventure/bosses/surface_bosses",
+        "apotheosis:adventure/bosses/boss_items"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
+}

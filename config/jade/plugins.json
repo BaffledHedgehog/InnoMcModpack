@@ -67,6 +67,11 @@
   "waystones": {
     "waystone": true
   },
+  "toms_peripherals": {
+    "modem_info": true,
+    "full_modem_info": true,
+    "wdt_info": true
+  },
   "corpse": {
     "corpse": true
   },

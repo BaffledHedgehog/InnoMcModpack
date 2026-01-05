@@ -69,4 +69,13 @@ ServerEvents.recipes(event => {
          G: 'create:brass_casing',
          W: 'create:cogwheel'
     })
+    event.remove({output: 'integrateddynamics:proto_chorus'})
+    event.recipes.create.mixing('integrateddynamics:proto_chorus', [
+        'integrateddynamics:menril_berries',
+        'minecraft:ender_pearl',
+        'mna:resonating_dust'
+    ]).heated()
+    event.remove({ id: /^integrateddynamics:squeezer\/ore/ })
+    event.remove({ id: /^integrateddynamics:mechanical_squeezer\/ore/ })
+
  })

@@ -45,4 +45,28 @@ ServerEvents.recipes(event => {
          M: 'integrateddynamics:crystalized_menril_chunk',
          C: 'computercraft:cable'
      })
+    event.remove({ output: 'create:deployer' })
+    event.shaped('create:deployer', [
+         'CRC',
+         'TGT',
+         ' H '
+    ], {
+         G: 'create_connected:parallel_gearbox',
+         H: 'create:brass_hand',
+         T: 'create:electron_tube',
+         R: 'minecraft:redstone',
+         C: 'create:cogwheel'
+    })
+    event.remove({ output: 'create:mechanical_crafter' })
+    event.shaped('create:mechanical_crafter', [
+         'WCW',
+         'TGT',
+         'WPW'
+    ], {
+         P: 'create:precision_mechanism',
+         C: 'create_connected:control_chip',
+         T: 'create:electron_tube',
+         G: 'create:brass_casing',
+         W: 'create:cogwheel'
+    })
  })

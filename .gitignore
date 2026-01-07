@@ -27,3 +27,5 @@ local
 authlib-injector*
 rhino.local.properties
 .idea
+config/voicechat/
+.nl_password

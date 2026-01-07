@@ -1,13 +1,13 @@
 {
   "scale" : {
-    "minValue" : 0.001,
-    "maxValue" : 1.7976931348623157E308
+    "minValue" : 0.01,
+    "maxValue" : 100
   },
-  "stiffness" : {
+  "maxForce" : {
     "minValue" : -3.4028235E38,
     "maxValue" : 3.4028235E38
   },
-  "maxForce" : {
+  "stiffness" : {
     "minValue" : -3.4028235E38,
     "maxValue" : 3.4028235E38
   },
@@ -15,46 +15,27 @@
     "minValue" : -3.4028235E38,
     "maxValue" : 3.4028235E38
   },
-  "maxDistance" : {
-    "minValue" : 0.0,
-    "maxValue" : 100.0
-  },
-  "gearRatio" : {
+  "extensionSpeed" : {
     "minValue" : 0.001,
     "maxValue" : 3.4028235E38
-  },
-  "thrusterForce" : {
-    "minValue" : 1.0,
-    "maxValue" : 1.0E100
-  },
-  "sensorScale" : {
-    "minValue" : 0.001,
-    "maxValue" : 10.0
   },
   "stripRadius" : {
     "minValue" : 0.0,
     "maxValue" : 10.0
   },
-  "physRopeRadius" : {
-    "minValue" : 0.01,
-    "maxValue" : 10.0
-  },
-  "thrusterScale" : {
-    "minValue" : 0.001,
-    "maxValue" : 10.0
-  },
-  "physRopeSides" : {
-    "minValue" : 2,
-    "maxValue" : 10
-  },
   "massLimit" : {
-    "minValue" : 4.9E-324,
-    "maxValue" : 1.7976931348623157E308
-  },
-  "channelLength" : {
-    "sizeLimit" : 50
+    "minValue" : 0.01,
+    "maxValue" : 100
   },
   "extensionDistance" : {
+    "minValue" : 0.001,
+    "maxValue" : 3.4028235E38
+  },
+  "maxDistance" : {
+    "minValue" : 0.0,
+    "maxValue" : 100.0
+  },
+  "gearRatio" : {
     "minValue" : 0.001,
     "maxValue" : 3.4028235E38
   },
@@ -66,9 +47,9 @@
     "minValue" : 0.0,
     "maxValue" : 1.7976931348623157E308
   },
-  "massPerBlock" : {
-    "minValue" : 1.0,
-    "maxValue" : 1.7976931348623157E308
+  "physRopeSegments" : {
+    "minValue" : 1,
+    "maxValue" : 100
   },
   "totalMassOfPhysRope" : {
     "minValue" : 0.01,
@@ -78,16 +59,35 @@
     "minValue" : 0.0,
     "maxValue" : 180.0
   },
-  "physRopeSegments" : {
-    "minValue" : 1,
-    "maxValue" : 100
+  "physRopeSides" : {
+    "minValue" : 2,
+    "maxValue" : 10
   },
   "fixedDistance" : {
     "minValue" : -3.4028235E38,
     "maxValue" : 3.4028235E38
   },
-  "extensionSpeed" : {
+  "channelLength" : {
+    "sizeLimit" : 50
+  },
+  "thrusterScale" : {
     "minValue" : 0.001,
-    "maxValue" : 3.4028235E38
+    "maxValue" : 10.0
+  },
+  "thrusterForce" : {
+    "minValue" : 1.0,
+    "maxValue" : 1.0E100
+  },
+  "massPerBlock" : {
+    "minValue" : 1.0,
+    "maxValue" : 1.7976931348623157E308
+  },
+  "physRopeRadius" : {
+    "minValue" : 0.01,
+    "maxValue" : 10.0
+  },
+  "sensorScale" : {
+    "minValue" : 0.001,
+    "maxValue" : 10.0
   }
 }

@@ -26,3 +26,4 @@ servers.*
 local
 authlib-injector*
 rhino.local.properties
+.idea

@@ -13,5 +13,5 @@
 	#Determines if it's possible to obtain the cryptic eye when enchanting
 	is_cryptic_eye_obtainable = true
 	#Determines whether or not players can remove ender eyes from the portal frames
-	can_remove_eye = false
+	can_remove_eye = true
 

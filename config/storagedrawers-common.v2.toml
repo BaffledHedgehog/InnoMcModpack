@@ -85,7 +85,7 @@
 	[Drawers.Filled]
 		# If enabled, carrying filled drawers in your inventory gives slowness debuff.
 		# Debuff can be mitigated with portability upgrade, if it's enabled.
-		heavyDrawers = false
+		heavyDrawers = true
 		# 
 		# Allows filled drawers to be stored in other drawer blocks.
 		canStoreInDrawers = false
@@ -135,7 +135,7 @@
 	# Controller range defines how far away a drawer can be connected on X, Y, or Z planes.
 	# The largest recommended range is around 75, or the expected chunk load distance.
 	# If setting this value higher, drawers will be unavailable if their chunks become unloaded.
-	controllerRange = 50
+	controllerRange = 10
 
 # Configuration around upgrade items that can be inserted into drawer blocks.
 [Upgrades]
@@ -150,27 +150,27 @@
 
 		[Upgrades.StorageTiers.Copper]
 			enableUpgrade = true
-			storageMultiplier = 4
+			storageMultiplier = 3
 
 		[Upgrades.StorageTiers.Iron]
 			enableUpgrade = true
-			storageMultiplier = 8
+			storageMultiplier = 4
 
 		[Upgrades.StorageTiers.Gold]
 			enableUpgrade = true
-			storageMultiplier = 16
+			storageMultiplier = 6
 
 		[Upgrades.StorageTiers.Emerald]
 			enableUpgrade = true
-			storageMultiplier = 64
+			storageMultiplier = 2
 
 		[Upgrades.StorageTiers.Diamond]
 			enableUpgrade = true
-			storageMultiplier = 256
+			storageMultiplier = 10
 
 		[Upgrades.StorageTiers.Netherite]
 			enableUpgrade = true
-			storageMultiplier = 2048
+			storageMultiplier = 20
 
 	# Allows same-item slots to balance out their amounts when items are added or removed from a slot.
 	# Works across networks when acting through a controller.

@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "64BCBC592A4485C4"
+	group: ""
+	id: "64BCBC592A4485C4"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: ["Тут пока ничего нет, но мб появится"]
+		id: "1017AEE6775FBBBD"
+		tasks: [{
+			id: "7350F60A3D39153F"
+			title: "WIP"
+			type: "checkmark"
+		}]
+		x: -13.5d
+		y: -1.0d
+	}]
+	title: "Технологии"
+}

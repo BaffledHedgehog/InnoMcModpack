@@ -1,0 +1,204 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "40ABC75EF1EC882D"
+	group: ""
+	id: "40ABC75EF1EC882D"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&oПочему эта ветка называется &lбезумие?&r&r"]
+			id: "2F0EE7E7EBF6629F"
+			tasks: [{
+				id: "0655BBB7CA1C096A"
+				title: "Отрицание"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2F0EE7E7EBF6629F"]
+			description: ["Штурвал - самый дешевый способ собрать физическую структуру. Поставь штурвал на блок, нажми shift+пкм с пустами руками, нажми assemble. Поздравляю - ты создал корабль. На него действует физика, он может плавать, на нём можно строить. Штурвал можно снесни и поставить заново, теперь он нужен только для управления кораблём."]
+			id: "5769D51E731F1B0F"
+			tasks: [{
+				id: "43FA854F661E20C5"
+				item: "vs_eureka:oak_ship_helm"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2F0EE7E7EBF6629F"]
+			description: ["Веревкой можно связывать структуры друг с другом."]
+			id: "19B2DAEF41446E72"
+			tasks: [{
+				id: "5DFC78657DE8DF8C"
+				item: "vstuff:lead_constraint_item"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2F0EE7E7EBF6629F"]
+			description: ["Поставь его на корабль и ты сможешь летать"]
+			id: "0E2B640D8BDA09C5"
+			tasks: [{
+				id: "64166917638DDB8B"
+				item: "vs_eureka:balloon"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2F0EE7E7EBF6629F"]
+			description: ["Как обычный вращатель из create, только с физикой"]
+			id: "395B598690B34D12"
+			tasks: [{
+				id: "3B28081A51161FFA"
+				item: "vs_clockwork:phys_bearing"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2F0EE7E7EBF6629F"]
+			description: ["Может быть полезно, если нужно сделать уже готовую постройку"]
+			id: "03546B25D71D0129"
+			tasks: [
+				{
+					id: "7FDCB23C6429BB36"
+					item: "vs_clockwork:physics_infuser"
+					type: "item"
+				}
+				{
+					id: "60E288C3DFA45AE7"
+					item: "vs_clockwork:wanderwand"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"395B598690B34D12"
+				"19B2DAEF41446E72"
+				"0E2B640D8BDA09C5"
+				"03546B25D71D0129"
+				"5769D51E731F1B0F"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Столкнись с очередным багом из-за vs или его аддонов и зарепорть его в https://github.com/Tamerik0/InnoMcModpack/issues если это ещё не сделали до тебя"]
+			id: "2005C16E2DD9FBAC"
+			tasks: [{
+				id: "19CB7EAD495496FD"
+				title: "Гнев"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2005C16E2DD9FBAC"]
+			description: [
+				"Если аккуратно использовать эту штуку она же не крашнет сервер? "
+				""
+				"Не крашнет ведь?"
+			]
+			id: "673E848A0D860628"
+			tasks: [{
+				id: "2091D39C5DE6D705"
+				item: {
+					Count: 1
+					id: "vstuff:phys_grabber"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Торг"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["673E848A0D860628"]
+			id: "2C67F8C886B7D2A9"
+			tasks: [{
+				id: "709D7AA7693C2AF7"
+				item: "vs_clockwork:gravitron"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"673E848A0D860628"
+				"2C67F8C886B7D2A9"
+			]
+			description: ["Зачем всё это? "]
+			id: "646CE4CAE3B8A00B"
+			tasks: [{
+				id: "7A265EC2055B2C09"
+				item: "the_vmod:physgun"
+				type: "item"
+			}]
+			title: "Депрессия"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["646CE4CAE3B8A00B"]
+			id: "21759D9441472BD3"
+			tasks: [{
+				id: "5FC3EF63243E90B4"
+				item: "vs_clockwork:creative_gravitron"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"646CE4CAE3B8A00B"
+				"21759D9441472BD3"
+			]
+			description: [
+				"Теперь законы физики подвластны тебе! "
+				""
+				"Ты стал богом? &4Или же ты просто очередной безумец, одержимый бредовыми идеями и манией величия?&r"
+				"Конечно второе."
+				"Тебе остаётся только принять &lбезумие&r и попытаться не угробить сервер."
+			]
+			id: "5D08D6295733ADC7"
+			tasks: [{
+				id: "2D4EE967BD877C4E"
+				item: "the_vmod:toolgun"
+				type: "item"
+			}]
+			title: "Принятие"
+			x: 16.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5D08D6295733ADC7"]
+			description: ["Доживи до конца сервера. &7&o(Конец сервера не должен произойти по твоей вине)&r&r"]
+			id: "0F623ADCA372BEE1"
+			tasks: [{
+				id: "6162E478683BF7DA"
+				title: "Счастливый конец"
+				type: "checkmark"
+			}]
+			x: 21.5d
+			y: -1.0d
+		}
+	]
+	title: "Безумие"
+}

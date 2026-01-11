@@ -26,7 +26,7 @@ jobs:
         password: ${{ secrets.SFTP_PASSWORD }}
         port: ${{ secrets.SFTP_PORT || 22 }}
         source: "build/server/*"
-        target: ${{ secrets.SFTP_TARGET_DIR }}
+        target: ${{ vars.SFTP_TARGET_DIR }}
         strip_components: 2
 
     - name: Update World Server Configs
@@ -37,5 +37,5 @@ jobs:
         password: ${{ secrets.SFTP_PASSWORD }}
         port: ${{ secrets.SFTP_PORT || 22 }}
         source: "build/server/defaultconfigs/*"
-        target: "${{ secrets.SFTP_TARGET_DIR }}/world/serverconfig"
+        target: "${{ vars.SFTP_TARGET_DIR }}/world/serverconfig"
         strip_components: 3

@@ -1,10 +1,10 @@
-name: Deploy Server
+name: Update World Configs
 
 on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  update-configs:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,13 +18,13 @@ jobs:
     - name: Build Server Pack
       run: python build_pack.py server
 
-    - name: Deploy Server via SFTP
+    - name: Update World Server Configs via SFTP
       uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
         server: ${{ secrets.SFTP_HOST }}
         username: ${{ secrets.SFTP_USERNAME }}
         password: ${{ secrets.SFTP_PASSWORD }}
         port: ${{ secrets.SFTP_PORT || 22 }}
-        local_path: 'build/server'
-        remote_path: ${{ vars.SFTP_TARGET_DIR }}
+        local_path: 'build/server/defaultconfigs'
+        remote_path: '${{ vars.SFTP_TARGET_DIR }}/world/serverconfig'
         sftp_only: true

@@ -29,10 +29,11 @@ jobs:
     - name: Zip Artifacts
       if: startsWith(github.ref, 'refs/tags/')
       run: |
-        cd build
-        zip -r ../client-pack.zip client/
-        zip -r ../server-pack.zip server/
-        cd ..
+        cd build/client
+        zip -r ../../client-pack.zip .
+        
+        cd ../../build/server
+        zip -r ../../server-pack.zip .
 
     - name: Create Release
       uses: softprops/action-gh-release@v1

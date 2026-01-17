@@ -4,18 +4,18 @@
 	enabled = true
 	#How many amplifier levels are supported for defense effects. 1 => only amplifier 0.
 	#Range: 1 ~ 1000
-	levelCount = 3
+	levelCount = 4
 	#Shared values for all defense levels (only duration differs per level).
 	#How many duration ticks are regenerated per second.
 	#Range: 0.0 ~ 72000.0
-	regenTicksPerSecond = 25.0
-	#How many duration ticks are drained per 1% of HP counter-damage.
-	#Range: 0.0 ~ 72000.0
-	drainTicksPerPercentDamage = 100.0
+	regenTicksPerSecond = 20.0
 	#Resistance to the counter type. 0.7 => only 30% damage goes through.
 	#Range: 0.0 ~ 1.0
-	specificResistance = 0.7
-	protections = [0.1, 0.2, 0.3]
-	durations = [100, 100, 60]
+	specificResistance = 0.9
+	protections = [0.0, 1.0, 2.0, 3.0]
+	durations = [2400, 1200, 1200, 1200]
+	#How many duration ticks are drained per 1% of HP counter-damage.
+	#Range: 0.0 ~ 72000.0
+	drainTicksPerPercentDamage = 300.0
 	stepan = ["Goodbye3216"]
 

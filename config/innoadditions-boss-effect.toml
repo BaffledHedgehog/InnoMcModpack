@@ -10,7 +10,7 @@
 		noPlayersRegenPerTick = 0.01
 		#Base regen per second (fraction of max HP) when players are nearby.
 		#Range: 0.0 ~ 100.0
-		baseRegenPerSecond = 0.005
+		baseRegenPerSecond = 0.01
 		#Extra regen per second per unique attacker in the last window.
 		#Range: 0.0 ~ 100.0
 		regenPerAttackerPerSecond = 0.0025
@@ -52,7 +52,7 @@
 		attackerWindowTicks = 1200
 		#How often (ticks) boss rolls for teleport.
 		#Range: 1 ~ 72000
-		teleportCheckIntervalTicks = 40
+		teleportCheckIntervalTicks = 60
 		#Base teleport chance per roll (0..1).
 		#Range: 0.0 ~ 1.0
 		teleportBaseChance = 0.1
@@ -73,38 +73,38 @@
 		explosionChancePerHitWithoutRetaliation = 0.015
 		#Bonus explosion chance if boss can't path to target player (0..1).
 		#Range: 0.0 ~ 1.0
-		explosionChanceBonusIfPlayerUnreachable = 0.2
+		explosionChanceBonusIfPlayerUnreachable = 0.5
 		#Explosion strength (power). Typically 2..6.
 		#Range: 0.0 ~ 64.0
-		explosionStrength = 4.0
+		explosionStrength = 1.0
 
 	[boss_effect.levels]
 
 		[boss_effect.levels.level0]
 			#Regen per tick (fraction of max HP) when there are no nearby players.
 			#Range: 0.0 ~ 100.0
-			noPlayersRegenPerTick = 0.0
+			noPlayersRegenPerTick = 0.01
 			#Base regen per second (fraction of max HP) when players are nearby.
 			#Range: 0.0 ~ 100.0
-			baseRegenPerSecond = 0.0
+			baseRegenPerSecond = 0.02
 			#Extra regen per second per unique attacker in the last window.
 			#Range: 0.0 ~ 100.0
-			regenPerAttackerPerSecond = 0.0
+			regenPerAttackerPerSecond = 0.0025
 			#Max unique attackers counted for regen scaling.
 			#Range: 0 ~ 1000
-			maxAttackersForScaling = 0
+			maxAttackersForScaling = 10
 			#Radius to consider "nearby players"; if none, use noPlayersRegenPerTick.
 			#Range: 0.0 ~ 1024.0
-			nearbyPlayerRadius = 0.0
+			nearbyPlayerRadius = 20.0
 			#Aura radius (blocks).
 			#Range: 0.0 ~ 1024.0
-			auraRadius = 0.0
+			auraRadius = 8.0
 			#Aura interval in ticks.
 			#Range: 1 ~ 72000
 			auraIntervalTicks = 40
 			#Aura damage as fraction of boss max HP per pulse.
 			#Range: 0.0 ~ 100.0
-			auraDamageFraction = 0.0
+			auraDamageFraction = 0.01
 			#(Legacy) Hits required for teleport condition (still used as a scaling reference).
 			#Range: 1 ~ 1000
 			hitsRequiredForTeleport = 5
@@ -128,60 +128,60 @@
 			attackerWindowTicks = 1200
 			#How often (ticks) boss rolls for teleport.
 			#Range: 1 ~ 72000
-			teleportCheckIntervalTicks = 40
+			teleportCheckIntervalTicks = 60
 			#Base teleport chance per roll (0..1).
 			#Range: 0.0 ~ 1.0
-			teleportBaseChance = 0.0
+			teleportBaseChance = 0.1
 			#Additional teleport chance per 'hit without retaliation' stack (0..1).
 			#Range: 0.0 ~ 1.0
-			teleportChancePerHitWithoutRetaliation = 0.0
+			teleportChancePerHitWithoutRetaliation = 0.02
 			#Bonus teleport chance if boss can't path to target player (0..1).
 			#Range: 0.0 ~ 1.0
-			teleportChanceBonusIfPlayerUnreachable = 0.0
+			teleportChanceBonusIfPlayerUnreachable = 0.25
 			#How often (ticks) boss rolls for block-breaking explosion.
 			#Range: 1 ~ 72000
 			explosionCheckIntervalTicks = 60
 			#Base explosion chance per roll (0..1).
 			#Range: 0.0 ~ 1.0
-			explosionBaseChance = 0.0
+			explosionBaseChance = 0.01
 			#Additional explosion chance per 'hit without retaliation' stack (0..1).
 			#Range: 0.0 ~ 1.0
-			explosionChancePerHitWithoutRetaliation = 0.0
+			explosionChancePerHitWithoutRetaliation = 0.015
 			#Bonus explosion chance if boss can't path to target player (0..1).
 			#Range: 0.0 ~ 1.0
-			explosionChanceBonusIfPlayerUnreachable = 0.0
+			explosionChanceBonusIfPlayerUnreachable = 0.2
 			#Explosion strength (power). Typically 2..6.
 			#Range: 0.0 ~ 64.0
-			explosionStrength = 0.0
+			explosionStrength = 1.0
 
 		[boss_effect.levels.level1]
 			#Regen per tick (fraction of max HP) when there are no nearby players.
 			#Range: 0.0 ~ 100.0
-			noPlayersRegenPerTick = 0.0
+			noPlayersRegenPerTick = 0.01
 			#Base regen per second (fraction of max HP) when players are nearby.
 			#Range: 0.0 ~ 100.0
-			baseRegenPerSecond = 0.0
+			baseRegenPerSecond = 0.02
 			#Extra regen per second per unique attacker in the last window.
 			#Range: 0.0 ~ 100.0
-			regenPerAttackerPerSecond = 0.0
+			regenPerAttackerPerSecond = 0.0025
 			#Max unique attackers counted for regen scaling.
 			#Range: 0 ~ 1000
-			maxAttackersForScaling = 0
+			maxAttackersForScaling = 10
 			#Radius to consider "nearby players"; if none, use noPlayersRegenPerTick.
 			#Range: 0.0 ~ 1024.0
-			nearbyPlayerRadius = 0.0
+			nearbyPlayerRadius = 20.0
 			#Aura radius (blocks).
 			#Range: 0.0 ~ 1024.0
-			auraRadius = 0.0
+			auraRadius = 10.0
 			#Aura interval in ticks.
 			#Range: 1 ~ 72000
-			auraIntervalTicks = 40
+			auraIntervalTicks = 20
 			#Aura damage as fraction of boss max HP per pulse.
 			#Range: 0.0 ~ 100.0
-			auraDamageFraction = 0.0
+			auraDamageFraction = 0.01
 			#(Legacy) Hits required for teleport condition (still used as a scaling reference).
 			#Range: 1 ~ 1000
-			hitsRequiredForTeleport = 5
+			hitsRequiredForTeleport = 3
 			#Max teleports tracked for unreachable buff.
 			#Range: 1 ~ 1000
 			maxTeleportsTracked = 3
@@ -202,31 +202,31 @@
 			attackerWindowTicks = 1200
 			#How often (ticks) boss rolls for teleport.
 			#Range: 1 ~ 72000
-			teleportCheckIntervalTicks = 40
+			teleportCheckIntervalTicks = 60
 			#Base teleport chance per roll (0..1).
 			#Range: 0.0 ~ 1.0
-			teleportBaseChance = 0.0
+			teleportBaseChance = 0.1
 			#Additional teleport chance per 'hit without retaliation' stack (0..1).
 			#Range: 0.0 ~ 1.0
-			teleportChancePerHitWithoutRetaliation = 0.0
+			teleportChancePerHitWithoutRetaliation = 0.02
 			#Bonus teleport chance if boss can't path to target player (0..1).
 			#Range: 0.0 ~ 1.0
-			teleportChanceBonusIfPlayerUnreachable = 0.0
+			teleportChanceBonusIfPlayerUnreachable = 0.25
 			#How often (ticks) boss rolls for block-breaking explosion.
 			#Range: 1 ~ 72000
 			explosionCheckIntervalTicks = 60
 			#Base explosion chance per roll (0..1).
 			#Range: 0.0 ~ 1.0
-			explosionBaseChance = 0.0
+			explosionBaseChance = 0.01
 			#Additional explosion chance per 'hit without retaliation' stack (0..1).
 			#Range: 0.0 ~ 1.0
-			explosionChancePerHitWithoutRetaliation = 0.0
+			explosionChancePerHitWithoutRetaliation = 0.015
 			#Bonus explosion chance if boss can't path to target player (0..1).
 			#Range: 0.0 ~ 1.0
-			explosionChanceBonusIfPlayerUnreachable = 0.0
+			explosionChanceBonusIfPlayerUnreachable = 0.2
 			#Explosion strength (power). Typically 2..6.
 			#Range: 0.0 ~ 64.0
-			explosionStrength = 0.0
+			explosionStrength = 1.0
 
 		[boss_effect.levels.level2]
 			#Regen per tick (fraction of max HP) when there are no nearby players.

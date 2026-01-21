@@ -78,6 +78,28 @@ def ensure_remote_dir(sftp, remote_path):
             logger.info(f"Creating remote directory: {current_path}")
             sftp.mkdir(current_path)
 
+def manual_sftp_put(sftp, local_path, remote_path, callback=None):
+    """
+    Manually copies file to handle VPN/MTU issues where paramiko.put() might hang.
+    Reads locally and writes remotely in small chunks.
+    """
+    chunk_size = 16 * 1024 # 16KB chunks
+    total_size = os.path.getsize(local_path)
+    transferred = 0
+    
+    with open(local_path, 'rb') as f_local:
+        with sftp.open(remote_path, 'wb') as f_remote:
+            # Force prefetch off if possible, though 'wb' usually doesn't prefetch.
+            # Just write linearly.
+            while True:
+                data = f_local.read(chunk_size)
+                if not data:
+                    break
+                f_remote.write(data)
+                transferred += len(data)
+                if callback:
+                    callback(transferred, total_size)
+
 def create_progress_callback(filename):
     start_time = time.time()
     last_log_time = start_time
@@ -194,7 +216,8 @@ def main():
             
             try:
                 callback = create_progress_callback(rel_path)
-                sftp.put(local_path, remote_path, callback=callback)
+                # sftp.put(local_path, remote_path, callback=callback)
+                manual_sftp_put(sftp, local_path, remote_path, callback=callback)
                 logger.info(f"Finished uploading {rel_path}")
             except Exception as e:
                 logger.error(f"Failed to upload {rel_path}: {e}")
